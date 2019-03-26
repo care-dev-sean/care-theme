@@ -57,12 +57,12 @@
 }
 
 .Frame-panel--sidebar {
-    @include border-inline(end, 1px solid $color-frame-border);
+    @include border-inline(end, 0px solid $color-frame-border);
     flex: 0 0 auto;
     width: $width-sidebar;
     min-width: $width-sidebar;
     max-width: ($width-sidebar * 2);
-    background-color: $color-background-offset;
+    background-color: $color-header-content;
     padding: 1rem 0;
 
     @include mq($until: navCollapse) {
