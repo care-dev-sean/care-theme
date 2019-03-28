@@ -1491,7 +1491,7 @@ h6 {
   width: 240px;
   min-width: 240px;
   max-width: 480px;
-  background-color: #fff;
+  background-color: rgba(30, 30, 30, 0.25);
   padding: 1rem 0; }
   [dir="ltr"] .Frame-panel--sidebar {
     border-right: 0px solid rgba(30, 30, 30, 0.25); }
@@ -1524,7 +1524,7 @@ h6 {
   z-index: 2;
   height: 100%;
   width: 0.625rem;
-  background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
+  background: none;
   background-size: 3px 16px;
   cursor: ew-resize; }
   .Frame-handle:hover {
