@@ -48,8 +48,14 @@
   position:fixed;
   top:0px;
   left:20px;
-  padding:20px;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-right:10px;
+  padding-left:10px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   background-color:$color-text;
+  z-index:99px;
 }
 
 .Frame-inner {
