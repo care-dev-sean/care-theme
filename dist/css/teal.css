@@ -1468,6 +1468,13 @@ h6 {
       [dir="rtl"] .Frame-body {
         margin-left: 240px; } }
 
+.Frame-fixed-button {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  padding: 20px;
+  background-color: #535363; }
+
 .Frame-inner {
   top: 0;
   right: 0;

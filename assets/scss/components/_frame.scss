@@ -40,6 +40,16 @@
         transform: translate3d(($width-sidebar * -1), 0, 0);
         transition: none;
     }
+
+
+}
+
+.Frame-fixed-button {
+  position:fixed;
+  top:0px;
+  left:20px;
+  padding:20px;
+  background-color:$color-text;
 }
 
 .Frame-inner {
