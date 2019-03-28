@@ -57,12 +57,12 @@
 }
 
 .Frame-panel--sidebar {
-    @include border-inline(end, 0px solid $color-frame-border);
+    @include border-inline(end, 1px solid $color-frame-border);
     flex: 0 0 auto;
     width: $width-sidebar;
     min-width: $width-sidebar;
     max-width: ($width-sidebar * 2);
-    background-color: $color-frame-border;
+    background-color: $color-background-offset;
     padding: 1rem 0;
 
     @include mq($until: navCollapse) {
@@ -95,7 +95,7 @@
     z-index: 2;
     height: 100%;
     width: $handle-size;
-    background: none;
+    background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
     background-size: 3px 16px;
     cursor: ew-resize;
 }
