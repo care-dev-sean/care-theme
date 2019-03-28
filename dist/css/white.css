@@ -1479,7 +1479,7 @@ h6 {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   background-color: #535363;
-  z-index: 99px; }
+  z-index: 99; }
 
 .Frame-inner {
   top: 0;
@@ -1581,8 +1581,8 @@ h6 {
     text-decoration: none; }
 
 .Header-button {
-  -webkit-border-end: 1px solid rgba(17, 17, 17, 0.25);
-          border-inline-end: 1px solid rgba(17, 17, 17, 0.25);
+  -webkit-border-end: 0px solid rgba(17, 17, 17, 0.25);
+          border-inline-end: 0px solid rgba(17, 17, 17, 0.25);
   display: block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1594,9 +1594,9 @@ h6 {
   color: inherit;
   cursor: pointer; }
   [dir="ltr"] .Header-button {
-    border-right: 1px solid rgba(17, 17, 17, 0.25); }
+    border-right: 0px solid rgba(17, 17, 17, 0.25); }
   [dir="rtl"] .Header-button {
-    border-left: 1px solid rgba(17, 17, 17, 0.25); }
+    border-left: 0px solid rgba(17, 17, 17, 0.25); }
   .Header-button:focus, .Header-button:active {
     outline: none; }
   .Header-button:hover {

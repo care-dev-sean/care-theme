@@ -20,7 +20,7 @@
 }
 
 .Header-button {
-    @include border-inline(end, 1px solid rgba($color-header-content, 0.25));
+    @include border-inline(end, 0px solid rgba($color-header-content, 0.25));
     display: block;
     flex-shrink: 0;
     border: 0;
