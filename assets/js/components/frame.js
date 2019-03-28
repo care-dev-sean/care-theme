@@ -111,6 +111,7 @@ module.exports = function(element){
         }
         sidebarProps.transition = isInitialClose ? 'none' : '.3s ease all';
         body.css(sidebarProps);
+        toggle.css('left', '248px');
         sidebarState = 'closed';
         el.addClass('is-closed');
         storage.set(`frame.state`, sidebarState);
@@ -128,6 +129,8 @@ module.exports = function(element){
             transition: '.3s ease all',
             transform: `translate3d(0, 0, 0)`
         });
+
+        toggle.css('left', '8px');
         sidebarState = 'open';
         el.removeClass('is-closed');
         storage.set(`frame.state`, sidebarState);
