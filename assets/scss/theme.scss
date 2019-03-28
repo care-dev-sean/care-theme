@@ -1,7 +1,7 @@
 $font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
 $font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;
 
-$color-link: #28f !default;
+$color-link: #6363F6 !default;
 $color-text: #535363 !default;
 $color-heading: #444 !default;
 
@@ -19,3 +19,64 @@ $color-frame-border: rgba($color-text, 0.25) !default;
 $color-sidebar-heading: rgba($color-text, 0.75) !default;
 
 $highlight-theme: 'github' !default;
+
+$brand-1-medium: #26AEB5;
+$brand-1-light: #4AD9D9;
+$brand-1-dark: #083438;
+
+$brand-2-medium: #02768b;
+$brand-2-light: #28e2c2;
+$brand-2-dark: #017062;
+
+$brand-3-medium: #EB0450;
+$brand-3-light: #FF8484;
+$brand-3-dark: #D2393C;
+
+$brand-2-muted: #93f1e1;
+$brand-2-lightest: #7DEAD7;
+$brand-2-accent: #12A0A0;
+
+$gray-base:              #1e1e1e;
+$gray-darker:            #444;
+$gray-dark:              #666;
+$gray:                   #888;
+$gray-mid:               #CCC;
+$gray-light:             #BCBCBC;
+$gray-lighter:           #dedede;
+$gray-lightest:          #eee;
+$gray-lightestier:       #f5f5f5;
+$gray-footer-bg:         #f9f9f9;
+
+$gray-borders:             #DEDEDE;
+
+
+$brand-primary:         $brand-1-medium;
+$brand-success:         $brand-2-medium;
+$brand-info:            $gray-dark;
+$brand-warning:         $brand-3-light;
+$brand-danger:          $brand-3-dark;
+
+$white: #FFF;
+$transparent: rgba(255, 255, 255, 0.0);
+$link-purple: #6363F6;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color:              $brand-3-medium;
+$btn-default-bg:                 $white;
+$btn-default-border:             $brand-3-medium;
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-3-medium;
+$btn-primary-border:             $brand-3-medium;
+
+$btn-secondary-color:            $brand-3-medium;
+$btn-secondary-bg:               $white;
+$btn-secondary-border:           $brand-3-medium;
+
+$btn-info-color:                 $white;
+$btn-info-bg:                    $gray-darker;
+$btn-info-border:                $gray-darker;
