@@ -1484,8 +1484,8 @@ h6 {
   -webkit-overflow-scrolling: touch; }
 
 .Frame-panel--sidebar {
-  -webkit-border-end: 1px solid rgba(83, 83, 99, 0.25);
-          border-inline-end: 1px solid rgba(83, 83, 99, 0.25);
+  -webkit-border-end: 0px solid rgba(83, 83, 99, 0.25);
+          border-inline-end: 0px solid rgba(83, 83, 99, 0.25);
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
   width: 240px;
@@ -1494,9 +1494,9 @@ h6 {
   background-color: #f6f6f6;
   padding: 1rem 0; }
   [dir="ltr"] .Frame-panel--sidebar {
-    border-right: 1px solid rgba(83, 83, 99, 0.25); }
+    border-right: 0px solid rgba(83, 83, 99, 0.25); }
   [dir="rtl"] .Frame-panel--sidebar {
-    border-left: 1px solid rgba(83, 83, 99, 0.25); }
+    border-left: 0px solid rgba(83, 83, 99, 0.25); }
   @media (max-width: 31.24em) {
     .Frame-panel--sidebar {
       max-width: 240px; } }
@@ -1526,7 +1526,8 @@ h6 {
   width: 0.625rem;
   background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
   background-size: 3px 16px;
-  cursor: ew-resize; }
+  cursor: ew-resize;
+  display: none; }
   .Frame-handle:hover {
     background-color: rgba(83, 83, 99, 0.05); }
   .Frame-handle:active {

@@ -57,7 +57,7 @@
 }
 
 .Frame-panel--sidebar {
-    @include border-inline(end, 1px solid $color-frame-border);
+    @include border-inline(end, 0px solid $color-frame-border);
     flex: 0 0 auto;
     width: $width-sidebar;
     min-width: $width-sidebar;
@@ -98,4 +98,5 @@
     background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
     background-size: 3px 16px;
     cursor: ew-resize;
+    display:none;
 }
