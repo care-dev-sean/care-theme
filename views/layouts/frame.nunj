@@ -7,12 +7,14 @@
 
     <div class="Frame-body" data-role="body">
 
+
         <div class="Frame-fixed-button">
           <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-              {% include 'icons/close-nav.svg' %}
+              {% include 'icons/icon-24-utility-back-arrow.svg' %}
               {% include 'icons/open-nav.svg' %}
           </button>
         </div>
+
 
 
         <div class="Frame-panel Frame-panel--main" data-role="main">
@@ -20,8 +22,6 @@
             {% block content %}{% endblock %}
             </div>
         </div>
-
-        <div class="Frame-handle" data-role="frame-resize-handle"></div>
 
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
           {% include 'partials/navigation/navigation.nunj' %}

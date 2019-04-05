@@ -5,8 +5,50 @@
 
 .Navigation-group {
     @include clearfix;
+    padding-left:24px;
 
-    & + & {
-        margin-top: 1.5rem;
+}
+
+.Navigation-Logo-Box {
+  text-align:center;
+  padding-top:24px;
+  padding-bottom:48px;
+}
+
+.Navigation-Search-Box {
+    width: 240px;
+    height: 42px;
+    padding: 8px;
+    z-index: 98;
+    text-align: center;
+    position:relative;
+    margin-bottom:24px;
+
+    input {
+      width: 85%;
+      padding:8px;
+      background-color: #dedede;
+      border:none;
+
     }
+
+    .search-box-icon {
+      position:absolute;
+      top:14px;
+      right:29px;
+    }
+}
+
+.is-closed {
+  .Navigation-Logo-Box {
+    display:none;
+  }
+
+  .Navigation-Search-Box {
+    display:none;
+  }
+
+  .Navigation-group {
+    display:none;
+  }
 }

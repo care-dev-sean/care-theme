@@ -1,4 +1,14 @@
 <nav class="Navigation">
+<div class="Navigation-Logo-Box">
+  {% include 'icons/care-theme-crest.svg' %}
+</div>
+
+<div class="Navigation-Search-Box">
+  <input type="text" class="typeahead" placeholder="Search">
+  <span class="search-box-icon">
+    {% include 'icons/icon-24-utility-search.svg' %}
+  </span>
+</div>
 {% for navPartial in frctl.theme.get('nav') %}
     {% include 'partials/navigation/' + navPartial + '.nunj' %}
 {% endfor %}

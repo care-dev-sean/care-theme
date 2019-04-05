@@ -15,7 +15,7 @@ module.exports = function(options){
         scripts: 'default',
         format: 'json',
         static: {
-            mount: 'themes/mandelbrot',
+            mount: 'themes/care-theme',
         },
         version: packageJSON.version,
         favicon: null

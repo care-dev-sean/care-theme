@@ -45,17 +45,16 @@
 }
 
 .Frame-fixed-button {
-  position:fixed;
-  top:0px;
-  left:20px;
-  padding-top:2px;
-  padding-bottom:2px;
-  padding-right:10px;
-  padding-left:10px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background-color:$color-text;
-  z-index:99;
+  position: fixed;
+  top: 0px;
+  left: 240px;
+  padding-top: 2px;
+  height:34px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #666;
+  z-index: 99;
+  border-bottom-left-radius:8px;
 }
 
 .Frame-inner {
@@ -80,6 +79,7 @@
     max-width: ($width-sidebar * 2);
     background-color: $color-background-offset;
     padding: 1rem 0;
+    margin-left:50px;
 
     @include mq($until: navCollapse) {
         max-width: $width-sidebar;

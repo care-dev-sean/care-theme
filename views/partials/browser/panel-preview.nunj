@@ -1,0 +1,5 @@
+<div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-{{ entity.id }}-panel-preview">
+    <div class="Preview-wrapper" >
+
+    </div>
+</div>

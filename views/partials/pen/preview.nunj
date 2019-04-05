@@ -1,5 +1,5 @@
-<div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-{{ entity.id }}">
-    <div class="Preview-wrapper" data-role="resizer">
+<div class="Pen-panel Pen-preview Preview"  id="preview-{{ entity.id }}">
+    <div class="Preview-wrapper" >
         <div class="Preview-resizer">
             {% if renderError -%}
                 {{ renderError }}
@@ -14,7 +14,7 @@
             </iframe>
             {%- endif %}
         </div>
-        <div class="Preview-handle" data-role="resize-handle"></div>
+        <!--<div class="Preview-handle" data-role="resize-handle"></div>-->
         <div class="Preview-overlay"></div>
     </div>
 </div>

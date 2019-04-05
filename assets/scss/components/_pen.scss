@@ -21,6 +21,8 @@
     max-height: 3rem;
     padding: 0.75rem;
     align-items: center;
+    position:relative;
+    top:-50px;
 
     .Status {
         @include margin-inline(start, auto);
@@ -52,14 +54,49 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin:0px;
+    background-color: #757575;
+    color:#fff;
+    padding-left:16px;
+    padding-right:16px;
+    text-align:center;
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:#fff;
+    height:34px;
+    z-index:99;
+    padding-top:0px;
+    border-bottom-right-radius: 8px;
+
+    a {
+      color:#fff;
+      top: 4px;
+      position: relative;
+    }
+
+    a:hover {
+      color:#fff;
+    }
+
+    svg {
+      fill:#fff;
+    }
+
+    .Status {
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-left: 12px;
+    }
 }
 
 .Pen-previewLink {
-    @include link-default($color-heading, none);
+    color:#fff;
 
     svg {
-        fill: $color-link;
-        opacity: 0.75;
+        fill: #fff;
+        opacity: 1.0;
     }
 
     &:hover svg {
@@ -69,8 +106,7 @@
 
 .Pen-preview {
     flex: 0 0 auto;
-    height: 50%;
-    max-height: calc(100% - 3.75rem);
+    height: 100%;
     margin: 0 $handle-size;
 
     @include mq($until: navCollapse) {
@@ -79,6 +115,8 @@
         max-height: 100%;
         margin: 0;
     }
+    border:none !important;
+    background-color: none !important;
 }
 
 .Pen-handle {

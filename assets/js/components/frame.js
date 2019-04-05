@@ -111,7 +111,10 @@ module.exports = function(element){
         }
         sidebarProps.transition = isInitialClose ? 'none' : '.3s ease all';
         body.css(sidebarProps);
-        ('.Frame-fixed-button ').css('left', '248px');
+        $('.Frame-fixed-button ').css({
+          left: '240px',
+          transition: '.3s ease all',
+        });
         sidebarState = 'closed';
         el.addClass('is-closed');
         storage.set(`frame.state`, sidebarState);
@@ -130,7 +133,10 @@ module.exports = function(element){
             transform: `translate3d(0, 0, 0)`
         });
 
-        ('.Frame-fixed-button ').css('left', '8px');
+        $('.Frame-fixed-button ').css({
+          left: '240px',
+          transition: '.3s ease all',
+        });
         sidebarState = 'open';
         el.removeClass('is-closed');
         storage.set(`frame.state`, sidebarState);
