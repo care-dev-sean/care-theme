@@ -10,6 +10,8 @@
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     {% include 'partials/head.nunj' %}
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/target/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="/css/target/components/components.css"/>
 </head>
