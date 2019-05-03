@@ -1,5 +1,5 @@
 
-    <h1 class="Pen-title">
+    <h1 class="Pen-title" style="display:none">
         <a class="Pen-previewLink" href="{{ previewUrl }}" title="Component preview">
             {{ entity.title }}
             {% include "icons/open-in-browser.svg" %}

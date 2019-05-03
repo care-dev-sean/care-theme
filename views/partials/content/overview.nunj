@@ -1,18 +1,24 @@
-{% import "macros/status.nunj" as status %}
-
-<p>You can browse the component library using the navigation on the left.</p>
-
-<h3>Component statuses</h3>
-<p>Components and their variants have been given statuses reflecting their state of completion. The available statuses are listed below.</p>
-<table>
-<tr>
-    <th>Label</th>
-    <th>Description</th>
-</tr>
-{% for handle, st in frctl.get('components.statuses') %}
-<tr>
-    <td>{{ status.tag(st) }}</td>
-    <td>{{ st.description }}</td>
-</tr>
-{% endfor %}
-</table>
+<div id="styleguide-overview-container">
+  <div class="styleguide-overview-hero-tag">
+  Care.com Living Style Guide
+  </div>
+  <div class="styleguide-overview-hero-text">
+  Together, we build a set of tools and expressions to rapidly deploy a consistent, intuitive, and delightful Care.com experience.
+  </div>
+</div>
+<div id="styleguide-overview-goals-container">
+  <div class="styleguide-overview-goals-table">
+    <span class="styleguide-overview-goal">
+      <div class="h2 black">Consistent</div>
+      <div class="h3">Experiences are familiar and act as expected</div>
+    </span>
+    <span class="styleguide-overview-goal">
+      <div class="h2 black">Intuitive</div>
+      <div class="h3">Tasks are instinctive even without conscious reasoning</div>
+    </span>
+    <span class="styleguide-overview-goal">
+      <div class="h2 black">Delightful</div>
+      <div class="h3">Engage emotion through delightful considered experiences</div>
+    </span>
+  </div>
+</div>
