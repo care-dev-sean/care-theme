@@ -514,7 +514,7 @@ html {
   width: 100%;
   background: #fff;
   box-sizing: border-box;
-  font: 16px/1.5 "Open Sans", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 "Lato", "Open Sans", Helvetica, Arial, sans-serif;
   color: #1e1e1e;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -625,22 +625,18 @@ h6 {
   font-weight: bold; }
 
 h1 {
-  font: bold 1.75rem/1.14286 "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "dlig" 1;
   letter-spacing: -0.025em; }
 
 h2 {
-  font: bold 1.3125rem/1.14286 "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "dlig" 1; }
 
 h3 {
-  font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "dlig" 1; }
 
 h4,
 h5,
 h6 {
-  font: normal 1rem/1.5 "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 .AssetList {
@@ -1253,7 +1249,6 @@ h6 {
       flex: auto;
   white-space: nowrap; }
   .Browser-tab a {
-    font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
     width: 100%;
     padding: 0.75rem 0.75rem 0.875rem;
     border-bottom: 0.125rem solid transparent;
@@ -1329,14 +1324,12 @@ h6 {
       margin-right: auto; }
 
 .Document-title {
-  font: bold 1.75rem/1.14286 "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "dlig" 1;
   letter-spacing: -0.025em; }
 
 .Error-stack {
   margin-top: 1.5rem; }
   .Error-stack pre {
-    font: normal 0.875rem/1.71429 Hack, Consolas, Monaco, "Andale Mono", monospace;
     color: rgba(30, 30, 30, 0.75); }
 
 .Error--render {
@@ -1344,12 +1337,9 @@ h6 {
   border: 1px solid rgba(187, 0, 0, 0.25);
   padding: 0.75rem; }
   .Error--render .Error-title {
-    font: normal 0.75rem/1.66667 "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: 0.075em;
     text-transform: uppercase;
     color: #b00; }
-  .Error--render .Error-message {
-    font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif; }
   .Error--render .Error-stack pre,
   .Error--render .Error-stack code {
     background-color: #fff !important; }
@@ -1364,7 +1354,6 @@ h6 {
   padding: 0.5rem 0.75rem;
   background-color: rgba(30, 30, 30, 0.05); }
   .FileBrowser-selectWrapper .select2-container {
-    font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
     -webkit-margin-start: -0.25rem;
             margin-inline-start: -0.25rem;
     margin-bottom: -1px;
@@ -1378,7 +1367,6 @@ h6 {
     outline: none; }
 
 .FileBrowser-select-label {
-  font: normal 0.75rem/1.66667 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   display: block;
@@ -1393,7 +1381,6 @@ h6 {
     border-color: #066; }
 
 .select2-results__option {
-  font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
   min-width: 15em; }
   .select2-results__option[aria-selected=true] {
     background-color: rgba(30, 30, 30, 0.1) !important; }
@@ -1630,7 +1617,6 @@ h6 {
     border-bottom: 1px solid rgba(30, 30, 30, 0.15); }
 
 .Meta-key {
-  font: normal 0.75rem/1.66667 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   display: block;
@@ -1639,7 +1625,6 @@ h6 {
   color: rgba(30, 30, 30, 0.75); }
 
 .Meta-value {
-  font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
   display: block;
   min-width: 10rem;
   padding-bottom: 0.25rem; }
@@ -1800,7 +1785,6 @@ h6 {
         color: transparent !important; } }
 
 .Pen-title {
-  font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "dlig" 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2011,7 +1995,6 @@ h6 {
       display: none; } }
 
 .Prose {
-  font: normal 1rem/1.5 "Open Sans", Helvetica, Arial, sans-serif;
   max-width: 44em;
   font-feature-settings: "liga", "dlig", "kern", "onum";
   hanging-punctuation: first; }
@@ -2036,18 +2019,15 @@ h6 {
   .Prose ol > li {
     list-style-type: decimal; }
   .Prose h1 {
-    font: bold 1.75rem/1.14286 "Open Sans", Helvetica, Arial, sans-serif;
     font-feature-settings: "dlig" 1;
     letter-spacing: -0.025em; }
   .Prose h2 {
-    font: bold 1.3125rem/1.14286 "Open Sans", Helvetica, Arial, sans-serif;
     font-feature-settings: "dlig" 1;
     margin-bottom: 1em;
     color: #1e1e1e; }
   .Prose *:not(hr) + h2 {
     margin-top: 2em; }
   .Prose h3 {
-    font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
     font-feature-settings: "dlig" 1;
     margin-bottom: 0.75em;
     opacity: 0.8; }
@@ -2093,7 +2073,6 @@ h6 {
     font-size: 0.875rem;
     font-feature-settings: "lnum" 1, "tnum" 1; }
   .Prose caption {
-    font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
     padding: 0 0.5rem;
     font-style: italic;
     text-align: start;
@@ -2159,7 +2138,6 @@ h6 {
     margin-right: 3px; }
 
 .Status-label {
-  font: normal 0.75rem/1.66667 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   display: inline-block;
@@ -2188,7 +2166,6 @@ h6 {
   white-space: nowrap; }
 
 .Tree-title {
-  font: normal 0.75rem/1.66667 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   -webkit-padding-start: 1rem;
@@ -2215,7 +2192,6 @@ h6 {
   margin-bottom: 0px; }
 
 .Tree-collectionLabel {
-  font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif;
   padding-bottom: 8px;
   padding-top: 8px;
   margin-top: 0px;
@@ -2245,9 +2221,6 @@ h6 {
       margin-left: -1.75rem; }
     [dir="rtl"] .Tree-collectionLabel span {
       margin-right: -1.75rem; }
-
-.Tree-item {
-  font: normal 0.875rem/1.71429 "Open Sans", Helvetica, Arial, sans-serif; }
 
 .Tree-entityLink {
   display: -ms-flexbox;
