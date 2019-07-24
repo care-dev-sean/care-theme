@@ -9,7 +9,27 @@
     {% include 'icons/icon-24-utility-search.svg' %}
   </span>
 </div>
+<div class="Navigation-Expansion-Toggle">
+  <span id="navToggle" class="link">Open All</span>
+</div>
 {% for navPartial in frctl.theme.get('nav') %}
     {% include 'partials/navigation/' + navPartial + '.nunj' %}
 {% endfor %}
 </nav>
+
+<script>
+
+$('#navToggle').on('click', function(e) {
+
+  var label = $('#navToggle').html();
+
+  if(label === 'Open All') {
+    $('#navToggle').html('Close All');
+    $('.Tree-collectionItems').css('display', 'block');
+  } else {
+    $('#navToggle').html('Open All');
+    $('.Tree-collectionItems').css('display', 'none');
+  }
+  
+});
+</script>

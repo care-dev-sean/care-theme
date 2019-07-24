@@ -1717,6 +1717,21 @@ h6 {
     top: 14px;
     right: 29px; }
 
+.Navigation-Expansion-Toggle {
+  padding: 8px;
+  z-index: 98;
+  position: relative;
+  margin-left: 24px; }
+  .Navigation-Expansion-Toggle input {
+    width: 85%;
+    padding: 8px;
+    background-color: #dedede;
+    border: none; }
+  .Navigation-Expansion-Toggle .search-box-icon {
+    position: absolute;
+    top: 14px;
+    right: 29px; }
+
 .is-closed .Navigation-Logo-Box {
   display: none; }
 
