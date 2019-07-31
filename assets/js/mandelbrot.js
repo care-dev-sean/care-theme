@@ -11,6 +11,7 @@ const utils      = require('./utils');
 const framer     = require('./components/frame');
 const Tree       = require('./components/tree');
 const Pen        = require('./components/pen');
+const SearchBox  = require('./components/searchbox');
 
 global.fractal = {
     events: events
@@ -18,9 +19,10 @@ global.fractal = {
 
 const frame     = framer($('#frame'));
 const navTrees  = $.map($('[data-behaviour="tree"]'), t => new Tree(t));
+const navSearch = $.map($('[data-behaviour="search-box"]'), s => new SearchBox(s));
 let pens        = [];
 
-loadPen();
+//loadPen();
 
 if (frctl.env == 'server') {
     doc.pjax('a[data-pjax], code a[href], .Prose a[href]:not([data-no-pjax]), .Browser a[href]:not([data-no-pjax])', '#pjax-container', {

@@ -3,11 +3,12 @@
   {% include 'icons/care-theme-crest.svg' %}
 </div>
 
-<div class="Navigation-Search-Box">
-  <input type="text" class="typeahead" placeholder="Search">
+<div class="Navigation-Search-Box" data-behaviour="search-box">
+  <input type="text" class="typeahead" placeholder="Search" data-behaviour="search-field">
   <span class="search-box-icon">
     {% include 'icons/icon-24-utility-search.svg' %}
   </span>
+  <div class="Navigation-Search-Suggestions" data-behavior="suggestions"></div>
 </div>
 <div class="Navigation-Expansion-Toggle">
   <span id="navToggle" class="link">Open All</span>
@@ -19,17 +20,21 @@
 
 <script>
 
-$('#navToggle').on('click', function(e) {
+$(document).ready(function () {
 
-  var label = $('#navToggle').html();
+  $('#navToggle').on('click', function(e) {
 
-  if(label === 'Open All') {
-    $('#navToggle').html('Close All');
-    $('.Tree-collectionItems').css('display', 'block');
-  } else {
-    $('#navToggle').html('Open All');
-    $('.Tree-collectionItems').css('display', 'none');
-  }
-  
+    var label = $('#navToggle').html();
+
+    if(label === 'Open All') {
+      $('#navToggle').html('Close All');
+      $('.Tree-collectionItems').css('display', 'block');
+    } else {
+      $('#navToggle').html('Open All');
+      $('.Tree-collectionItems').css('display', 'none');
+    }
+
+  });
+
 });
 </script>

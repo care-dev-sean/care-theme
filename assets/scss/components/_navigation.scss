@@ -19,7 +19,7 @@
     width: 240px;
     height: 42px;
     padding: 8px;
-    z-index: 98;
+    z-index: 101;
     text-align: center;
     position:relative;
     margin-bottom:24px;
@@ -48,7 +48,7 @@
     input {
       width: 85%;
       padding:8px;
-      background-color: #dedede;
+      background-color: #fff;
       border:none;
 
     }
@@ -72,4 +72,62 @@
   .Navigation-group {
     display:none;
   }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-58px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Navigation-Search-Suggestions {
+  width:100%;
+  z-index:501;
+
+  .suggestion {
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    border-left:1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    height:58px;
+
+
+
+    .suggestion-link {
+      .suggestion-label {
+        font-size:18px;
+        font-weight:bold;
+        padding:4px;
+        color:#444;
+      }
+
+      .suggestion-description {
+        font-size:12px;
+        padding:4px;
+        color:#444;
+      }
+    }
+
+  }
+
+  .suggestion:nth-child(even) {
+    background-color: #ededed;
+  }
+
+  .suggestion:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .suggestion:hover {
+    background-color: #D4DAF6;
+  }
+
 }

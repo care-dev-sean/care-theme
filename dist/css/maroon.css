@@ -1703,7 +1703,7 @@ h6 {
   width: 240px;
   height: 42px;
   padding: 8px;
-  z-index: 98;
+  z-index: 101;
   text-align: center;
   position: relative;
   margin-bottom: 24px; }
@@ -1725,7 +1725,7 @@ h6 {
   .Navigation-Expansion-Toggle input {
     width: 85%;
     padding: 8px;
-    background-color: #dedede;
+    background-color: #fff;
     border: none; }
   .Navigation-Expansion-Toggle .search-box-icon {
     position: absolute;
@@ -1740,6 +1740,42 @@ h6 {
 
 .is-closed .Navigation-group {
   display: none; }
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-58px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.Navigation-Search-Suggestions {
+  width: 100%;
+  z-index: 501; }
+  .Navigation-Search-Suggestions .suggestion {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 58px; }
+    .Navigation-Search-Suggestions .suggestion .suggestion-link .suggestion-label {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 4px;
+      color: #444; }
+    .Navigation-Search-Suggestions .suggestion .suggestion-link .suggestion-description {
+      font-size: 12px;
+      padding: 4px;
+      color: #444; }
+  .Navigation-Search-Suggestions .suggestion:nth-child(even) {
+    background-color: #ededed; }
+  .Navigation-Search-Suggestions .suggestion:nth-child(odd) {
+    background-color: #fff; }
+  .Navigation-Search-Suggestions .suggestion:hover {
+    background-color: #D4DAF6; }
 
 .Pen {
   display: -ms-flexbox;
