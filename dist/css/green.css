@@ -1759,8 +1759,7 @@ h6 {
     text-align: left;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    height: 58px; }
+    border-bottom: 1px solid #ccc; }
     .Navigation-Search-Suggestions .suggestion .suggestion-link .suggestion-label {
       font-size: 18px;
       font-weight: bold;
