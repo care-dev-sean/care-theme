@@ -25,6 +25,8 @@ class SearchBox {
     this._loadData();
     console.log(this._index);
     $(this._searchField).on('keyup', this._keyHandler);
+    $(this._searchField).on('blur', this._delayedClear);
+    $(this._searchField).on('focus', this._keyHandler);
     //TODO
     //
     // First
@@ -44,6 +46,13 @@ class SearchBox {
     // update the_suggestions element
   }
 
+  _delayedClear () {
+    var update = function () {
+      self._clearSuggestions();
+    }
+    setTimeout(update, 1000);
+  }
+
   _keyHandler (e) {
 
     let input = e.target.value;
@@ -58,7 +67,7 @@ class SearchBox {
 
   _clearSuggestions (e) {
     console.log('clearing suggestions');
-    $(this._suggestions[0]).html('');
+    $(self._suggestions[0]).html('');
   }
 
   _filterSuggestions (input) {
