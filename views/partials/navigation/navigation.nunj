@@ -5,7 +5,7 @@
 
 <div class="Navigation-Search-Box" data-behaviour="search-box">
   <input type="text" class="typeahead" placeholder="Search" data-behaviour="search-field">
-  <span class="search-box-icon">
+  <span class="icon icon-darker-fill search-box-icon">
     {% include 'icons/icon-24-utility-search.svg' %}
   </span>
   <div class="Navigation-Search-Suggestions" data-behavior="suggestions"></div>
