@@ -28,10 +28,10 @@ $(document).ready(function () {
 
     if(label === 'Open All') {
       $('#navToggle').html('Close All');
-      $('.Tree-collectionItems').css('display', 'block');
+      $('.Tree-collection').removeClass('is-closed');
     } else {
       $('#navToggle').html('Open All');
-      $('.Tree-collectionItems').css('display', 'none');
+      $('.Tree-collection').addClass('is-closed');
     }
 
   });

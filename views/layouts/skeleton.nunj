@@ -14,8 +14,8 @@
     <script src="/bower_components/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="/bower_components/requirejs/require.js"></script>
     <script src="/js/config.js"></script>
-    <link rel="stylesheet" href="/scss/target/bootstrap/bootstrap.css"/>
-    <link rel="stylesheet" href="/scss/target/components/components.css"/>
+    <link rel="stylesheet" href="/css/target/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/target/components/components.css"/>
 </head>
 <body>
 

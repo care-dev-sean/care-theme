@@ -10,11 +10,14 @@
 }
 
 .Tree-collection {
+
+    transition:all .5s ease-out;
     &.is-closed {
         background-color: transparent;
 
         .Tree-collectionItems {
             display: none;
+            transition:all .5s ease-out;
         }
 
         .Tree-collectionLabel {
@@ -27,6 +30,15 @@
                   width:5px;
                   background-color:transparent;
                 }
+            }
+
+            span:first-child::before {
+                @include offset-inline(start);
+                display: block;
+                position: absolute;
+                height: 18px;
+                content: "+";
+                margin-left: -15px;
             }
         }
     }
@@ -56,8 +68,17 @@
     span {
         @include padding-inline(start, 0.75rem);
         @include margin-inline(start, -1.75rem);
-        display: block;
+        display: inline-block;
         position: relative;
+    }
+
+    span:first-child::before {
+        @include offset-inline(start);
+        display: block;
+        position: absolute;
+        height: 18px;
+        content: "-";
+        margin-left: -15px;
     }
 }
 
@@ -102,13 +123,11 @@
   a::before {
       @include offset-inline(start);
       display: block;
-      position: absolute;
       width: 2px;
       height: 18px;
       content: "";
-      margin-left: 3px;
+      margin-right: 8px;
       background-color: #7DEAD7;
-      margin-left: 24px;
   }
 }
 

@@ -15,10 +15,6 @@
           </button>
         </div>
 
-
-
-
-
         <div class="Frame-panel Frame-panel--main" data-role="main">
             <div class="Frame-inner" id="pjax-container">
             {% block content %}{% endblock %}
@@ -29,9 +25,8 @@
           {% include 'partials/navigation/navigation.nunj' %}
         </div>
 
-
-
     </div>
+
 </div>
 
 {% endblock %}

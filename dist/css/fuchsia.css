@@ -2227,16 +2227,30 @@ h6 {
   [dir="rtl"] .Tree-title {
     padding-right: 1rem; }
 
-.Tree-collection.is-closed {
-  background-color: transparent; }
-  .Tree-collection.is-closed .Tree-collectionItems {
-    display: none; }
-  [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
-    width: 5px;
+.Tree-collection {
+  transition: all .5s ease-out; }
+  .Tree-collection.is-closed {
     background-color: transparent; }
-  [dir="rtl"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
-    width: 5px;
-    background-color: transparent; }
+    .Tree-collection.is-closed .Tree-collectionItems {
+      display: none;
+      transition: all .5s ease-out; }
+    [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
+      width: 5px;
+      background-color: transparent; }
+    [dir="rtl"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
+      width: 5px;
+      background-color: transparent; }
+    .Tree-collection.is-closed .Tree-collectionLabel span:first-child::before {
+      offset-inline-start: 0;
+      display: block;
+      position: absolute;
+      height: 18px;
+      content: "+";
+      margin-left: -15px; }
+      [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span:first-child::before {
+        left: 0; }
+      [dir="rtl"] .Tree-collection.is-closed .Tree-collectionLabel span:first-child::before {
+        right: 0; }
 
 .Tree-items {
   margin-bottom: 0px; }
@@ -2261,7 +2275,7 @@ h6 {
             padding-inline-start: 0.75rem;
     -webkit-margin-start: -1.75rem;
             margin-inline-start: -1.75rem;
-    display: block;
+    display: inline-block;
     position: relative; }
     [dir="ltr"] .Tree-collectionLabel span {
       padding-left: 0.75rem; }
@@ -2271,6 +2285,17 @@ h6 {
       margin-left: -1.75rem; }
     [dir="rtl"] .Tree-collectionLabel span {
       margin-right: -1.75rem; }
+  .Tree-collectionLabel span:first-child::before {
+    offset-inline-start: 0;
+    display: block;
+    position: absolute;
+    height: 18px;
+    content: "-";
+    margin-left: -15px; }
+    [dir="ltr"] .Tree-collectionLabel span:first-child::before {
+      left: 0; }
+    [dir="rtl"] .Tree-collectionLabel span:first-child::before {
+      right: 0; }
 
 .Tree-entityLink {
   display: -ms-flexbox;
@@ -2299,13 +2324,11 @@ h6 {
 .is-current a::before {
   offset-inline-start: 0;
   display: block;
-  position: absolute;
   width: 2px;
   height: 18px;
   content: "";
-  margin-left: 3px;
-  background-color: #7DEAD7;
-  margin-left: 24px; }
+  margin-right: 8px;
+  background-color: #7DEAD7; }
   [dir="ltr"] .is-current a::before {
     left: 0; }
   [dir="rtl"] .is-current a::before {
